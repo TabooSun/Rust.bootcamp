@@ -30,14 +30,14 @@ async fn rocket() -> _ {
         .expect("Failed to create Postgres connection pool!");
     
     // TODO: Delete this query
-    let recs = sqlx::query!("SELECT * FROM questions")
+    /*let recs = sqlx::query!("SELECT * FROM questions")
             .fetch_all(&pool)
             .await
-            .unwrap();
+            .unwrap();*/
 
     // TODO: Delete these log statements
-    info!("********* Question Records *********");
-    info!("{:?}", recs);
+ /*   info!("********* Question Records *********");
+    info!("{:?}", recs);*/
 
     rocket::build()
         .mount(

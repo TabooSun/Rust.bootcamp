@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 1/Step 1 &amp; 2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 2/Step 1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 2/Step 2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 3/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 1/Step 1 &amp; 2/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 2/Step 1/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 2/Step 2/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 1/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 2/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 3/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
