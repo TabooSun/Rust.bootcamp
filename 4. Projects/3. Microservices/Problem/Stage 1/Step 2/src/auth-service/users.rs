@@ -28,7 +28,10 @@ pub struct UsersImpl {
 
 impl Users for UsersImpl {
     fn create_user(&mut self, username: String, password: String) -> Result<(), String> {
-        // TODO: Check if username already exist. If so return an error.
+        // Check if username already exists.
+        if self.username_to_user.contains_key(&username) {
+            return Err("Username already exists.".to_owned());
+        }
 
         let salt = SaltString::generate(&mut OsRng);
 
@@ -37,15 +40,21 @@ impl Users for UsersImpl {
             .map_err(|e| format!("Failed to hash password.\n{e:?}"))?
             .to_string();
 
-        let user: User = todo!(); // Create new user with unique uuid and hashed password.
+        let user: User = User {
+            user_uuid: Uuid::new_v4().to_string(),
+            username: username.to_owned(),
+            password: hashed_password,
+        }; // Create new user with unique uuid and hashed password.
 
         // TODO: Add user to `username_to_user` and `uuid_to_user`.
+        self.username_to_user.insert(username.to_owned(), user.to_owned());
+        self.uuid_to_user.insert(user.user_uuid.to_owned(), user.to_owned());
 
         Ok(())
     }
 
     fn get_user_uuid(&self, username: String, password: String) -> Option<String> {
-        let user: &User = todo!(); // Retrieve `User` or return `None` is user can't be found.
+        let user: &User = self.username_to_user.get(&username)?; // Retrieve `User` or return `None` is user can't be found.
 
         // Get user's password as `PasswordHash` instance. 
         let hashed_password = user.password.clone();
@@ -53,14 +62,22 @@ impl Users for UsersImpl {
 
         // Verify passed in password matches user's password.
         let result = Pbkdf2.verify_password(password.as_bytes(), &parsed_hash);
-
+        if result.is_err() {
+            return None;
+        }
         // TODO: If the username and password passed in matches the user's username and password return the user's uuid.
-
-        None
+        Some(user.user_uuid.to_owned())
     }
 
     fn delete_user(&mut self, user_uuid: String) {
         // TODO: Remove user from `username_to_user` and `uuid_to_user`.
+        let removed_user = self.uuid_to_user.remove(&user_uuid);
+        match removed_user {
+            None => {}
+            Some(user) => {
+                self.username_to_user.remove(user.username.as_str());
+            }
+        }
     }
 }
 

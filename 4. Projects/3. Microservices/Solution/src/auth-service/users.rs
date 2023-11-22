@@ -45,7 +45,6 @@ impl Users for UsersImpl {
             password: hashed_password,
         };
 
-
         self.username_to_user.insert(username, user.clone());
         self.uuid_to_user.insert(user.user_uuid.clone(), user);
 

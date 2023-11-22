@@ -4,18 +4,18 @@ use crate::{sessions::Sessions, users::Users};
 
 use tonic::{Request, Response, Status};
 
-use authentication::auth_server::Auth;
-use authentication::{
+/*pub use authentication::auth_server::Auth;
+pub use authentication::{
     SignInRequest, SignInResponse, SignOutRequest, SignOutResponse, SignUpRequest, SignUpResponse,
     StatusCode,
 };
 
 pub mod authentication {
     tonic::include_proto!("authentication");
-}
+}*/
 
 // Re-exporting
-pub use authentication::auth_server::AuthServer;
+pub use authentication::*;
 pub use tonic::transport::Server;
 
 pub struct AuthService {

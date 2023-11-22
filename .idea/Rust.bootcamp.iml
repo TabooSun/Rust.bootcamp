@@ -8,12 +8,20 @@
       <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 1/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 2/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/3. Microservices/Problem/Stage 1/Step 2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/3. Microservices/Solution/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/3. Microservices/Problem/Stage 1/Step 3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4. Projects/3. Microservices/Problem/Stage 1/Step 4/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 1/Step 1 &amp; 2/target" />
       <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 2/Step 1/target" />
       <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 2/Step 2/target" />
       <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 1/target" />
       <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 2/target" />
       <excludeFolder url="file://$MODULE_DIR$/4. Projects/2. API/Problem/Stage 3/Step 3/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/3. Microservices/Problem/Stage 1/Step 2/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/3. Microservices/Solution/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/3. Microservices/Problem/Stage 1/Step 3/target" />
+      <excludeFolder url="file://$MODULE_DIR$/4. Projects/3. Microservices/Problem/Stage 1/Step 4/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
